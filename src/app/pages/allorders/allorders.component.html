@@ -1,0 +1,124 @@
+<!-- <section class="bg-gray-50 mx-auto border shadow p-4 rounded">
+  <h1 class="text-center text-3xl">All Oreders</h1>
+
+  @for (order of allOrdersList; track $index) {
+  <div class="grid md:grid-cols-[65%_minmax(0,1fr)] gap-28 mb-3">
+    <div
+      class="bg-gray-50 shadow rounded border flex items-center justify-center flex-wrap gap-4"
+    >
+      @for (item of order?.cartItems; track $index) {
+      <div class="flex items-center flex-col justify-center border p-2 w-[25%]">
+        <div>
+          <div>
+            <img
+              [src]="item.product.imageCover"
+              class="w-full"
+              [alt]="item.product.title"
+            />
+          </div>
+
+          <p>order id : {{ order.id }}</p>
+          <p>isDrived :{{ order.isDelivered }}</p>
+          <p>isPaid : {{ order.isPaid }}</p>
+          <p>Date : {{ order.updatedAt }}</p>
+          <p>Payment type : {{ order.paymentMethodType }}</p>
+        </div>
+      </div>
+      }
+    </div>
+
+    <div>
+      <p>shiping price {{ order.shippingPrice }}</p>
+      <p>tax price {{ order.taxPrice }}</p>
+      <p>total Order Price:{{ order?.totalOrderPrice }}</p>
+    </div>
+  </div>
+  }
+</section> -->
+
+<!-- <section>
+  <h1>All Oreders</h1>
+
+  @for (order of allOrders; track $index) {
+  <div class="grid md:grid-cols-[65%_minmax(0,1fr)] gap-28 mb-3">
+    <div
+      class="bg-gray-50 shadow rounded border flex items-center justify-center flex-wrap gap-4"
+    >
+      @for (item of order?.cartItems; track $index) {
+      <div
+        class="flex items-center flex-col justify-center border border-green-400 p-2 w-[25%]"
+      >
+        <div>
+          <div>
+            <img
+              [src]="item.product.imageCover"
+              class="w-full"
+              [alt]="item.product.title"
+            />
+          </div>
+
+          <p>order id : {{ order.id }}</p>
+          <p>isDrived :{{ order.isDelivered }}</p>
+          <p>isPaid : {{ order.isPaid }}</p>
+          <p>Date : {{ order.updatedAt }}</p>
+          <p>Payment type : {{ order.paymentMethodType }}</p>
+        </div>
+      </div>
+      }
+    </div>
+
+    <div>
+      <p>shiping price {{ order.shippingPrice }}</p>
+      <p>tax price {{ order.taxPrice }}</p>
+      <p>total Order Price:{{ order?.totalOrderPrice }}</p>
+    </div>
+  </div>
+  }
+</section> -->
+
+<section>
+  @for (order of allOrdersList(); track $index) {
+  <div class="grid md:grid-cols-[65%_minmax(0,1fr)] md:gap-24 gap-8">
+    <div
+      class="bg-gray-50 border rounded shadow flex flex-wrap items-center justify-center px-5 py-6 gap-3 mb-1 md:mb-4"
+    >
+      <!-- cart -->
+      @for (item of order.cartItems; track $index) {
+      <div
+        class="sm:w-[40%] lg:w-[25%] border rounded hover:border-green-500 transition p-3 sm:block flex items-center gap-1"
+      >
+        <img
+          [src]="item.product.imageCover"
+          class="sm:w-full mb-2 block w-[50%]"
+          alt=""
+        />
+
+        <div class="ml-2">
+          <p class="mb-1">
+            isDrive : <span>{{ order.id }}</span>
+          </p>
+          <p class="mb-1">
+            ispaid : <span>{{ order.isPaid }}</span>
+          </p>
+          <p class="mb-1">
+            payment : <span>{{ order.paymentMethodType }}</span>
+          </p>
+        </div>
+      </div>
+      }
+    </div>
+
+    <div class="mb-2">
+      <p>
+        shiping price <span>{{ order.shippingPrice }}</span>
+      </p>
+      <p>
+        taxt price <span>{{ order.taxPrice }}</span>
+      </p>
+      <p>
+        total price <span>{{ order.totalOrderPrice }}</span>
+      </p>
+    </div>
+  </div>
+  }
+</section>

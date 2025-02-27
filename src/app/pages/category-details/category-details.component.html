@@ -1,0 +1,18 @@
+@if ( detailsCategory) {
+<section>
+  <h1 class="text-center text-3xl my-2">Details categorie</h1>
+  <div class="flex items-center">
+    <div class="w-1/4">
+      <div>
+        <img
+          [src]="detailsCategory.image"
+          class="w-full h-[250px] object-contain"
+          [alt]="detailsCategory.name"
+        />
+        <h3 class="text-green-600 text-center">{{ detailsCategory.name }}</h3>
+      </div>
+    </div>
+  </div>
+</section>
+
+}

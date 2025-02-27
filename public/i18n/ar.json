@@ -1,0 +1,61 @@
+{
+    "navbar": {
+      "home": "الصفحة الرئيسية",
+      "products": "المنتجات",
+      "categories": "الفئات",
+      "wishlists": "قائمة الرغبات",
+      "login": "تسجيل الدخول",
+      "register": "التسجيل",
+      "logout": "تسجيل الخروج",
+      "lang": "اللغة"
+      
+    },
+  
+    "login": {
+      "loginNow": "تسجيل الدخول الآن",
+      "email": "البريد الإلكتروني",
+      "password": "كلمة المرور",
+      "SignIN": "تسجيل الدخول",
+      "forgotPassword": "هل نسيت كلمة المرور؟"
+    },
+
+
+    "register":{
+  "registerNow":"التسجيل الآن",
+  "name":"الاسم",
+  "email":"البريد الإلكتروني",
+  "password":"كلمة المرور",
+  "rePassword":"إعادة كلمة المرور",
+  "phone":"الهاتف",
+  "SignUP":"التسجيل"
+
+},
+
+
+
+    "footer": {
+     
+ 
+      "termsAndConditions": "البنود والشروط",
+      "privacyPolicy": "سياسة الخصوصية",
+      "copyright": "جميع الحقوق محفو��ة © 2023" ,
+      "Get The FreshCart App":"احصل على تطبيق FreshCart",
+      "We Will Send You a Link, Open it on Your Phone to download the app":"سنرسل لك رابطًا ، افتحه على هاتفك لتنزيل التطبيق",
+    
+      "Share App Link":"شارك رابط التطبيق",
+     
+      "Payment partners":"شركاء الدفع",
+      "Get Deliveries with FreshCart":"احصل على توصيلات مع FreshCart"
+
+  },
+
+  "home":{
+"Popular categroies":"الفئات الشعبية",
+"Popular products":"المنتجات الشعبية"
+
+}
+  
+
+
+
+}
